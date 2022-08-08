@@ -1,10 +1,10 @@
 FROM mcr.microsoft.com/dotnet/aspnet:6.0-focal AS base
 WORKDIR /app
-EXPOSE 5209
+EXPOSE 9000
 RUN apt-get update -yq \
     && apt-get install dnsutils -yq
 
-ENV ASPNETCORE_URLS=http://+:5209
+ENV ASPNETCORE_URLS=http://+:9000
 
 # Creates a non-root user with an explicit UID and adds permission to access the /app folder
 # For more info, please refer to https://aka.ms/vscode-docker-dotnet-configure-containers
