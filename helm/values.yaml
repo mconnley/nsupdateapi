@@ -38,7 +38,7 @@ securityContext: {}
 
 service:
   type: NodePort
-  port: 50999
+  port: 30114
 
 ingress:
   enabled: false
